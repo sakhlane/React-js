@@ -1,0 +1,93 @@
+🧩 Problem Statement: Display User Profile Using Props
+
+Create a React application with the following requirements:
+
+Create a UserProfile component.
+
+The UserProfile component should accept the following props:
+
+name
+
+age
+
+email
+
+Inside the UserProfile component, display:
+
+User’s name
+
+User’s age
+
+User’s email
+
+In the App component:
+
+Render the UserProfile component.
+
+Pass values for name, age, and email as props.
+
+✅ Expected Behavior
+
+The data displayed in UserProfile should come only from props, not hardcoded values.
+
+Changing the prop values in App should automatically update what is shown in UserProfile.
+
+---------------------------------------------------------------------------------------------
+2nd problem statement 
+--------------------------------------------
+🧩 Real-World Practice Problem: Product Card List
+Scenario
+
+You are building a product listing page for an e-commerce website.
+
+📦 Data (Provided)
+const products = [
+  {
+    id: 1,
+    title: "Wireless Headphones",
+    price: 2999,
+    rating: 4.5,
+    inStock: true
+  },
+  {
+    id: 2,
+    title: "Smart Watch",
+    price: 4999,
+    rating: 4.2,
+    inStock: false
+  },
+  {
+    id: 3,
+    title: "Bluetooth Speaker",
+    price: 1999,
+    rating: 4.7,
+    inStock: true
+  }
+];
+
+🎯 Your Task
+1️⃣ App Component
+
+Store the products array in App
+
+Use .map() to render a ProductCard component for each product
+
+Pass the entire product object as a prop
+
+2️⃣ ProductCard Component
+
+ProductCard should receive one prop:
+
+product (object)
+
+Display:
+
+Product title
+
+Price (₹ format)
+
+Rating
+
+Stock status
+
+Show “In Stock” or “Out of Stock”
